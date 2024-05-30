@@ -1,0 +1,59 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@import './mixins';
+
+// Colors
+@import './colors';
+
+
+.d-none{
+  display: none !important;
+}
+
+.loaderDiv {
+  z-index: 99999;
+  backdrop-filter: blur(2px);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.pageLoader {
+  max-width: 50px;
+  margin: 0 auto;
+}
+
+
+// Loader start
+img.loaderlogo {
+  max-width: 50px;
+  // animation: rotation 3s infinite linear;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  >.container {
+    max-width: 500px;
+
+    .shadow {
+      border-top: 3px solid $primaryColor;
+    }
+
+    .login-logo {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+}

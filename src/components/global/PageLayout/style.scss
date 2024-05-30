@@ -1,0 +1,11 @@
+@import '../../../scss/mixins';
+.pageContent{
+  min-height: calc(100vh - 350px);
+}
+
+
+input.w-full.px-4::placeholder {
+  color: #C0C0C0 !important;
+  font-family: 'be_vietnamlight' !important;
+  font-size: 12px;
+}
