@@ -14,6 +14,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { ToastContainer } from "react-toastify";
 import NotFoundPage from "./pages/NotFoundPage";
+import Code from "./pages/code";
 
 
 const { persistor, store } = configureStoreProd();
@@ -21,6 +22,7 @@ const { persistor, store } = configureStoreProd();
 function App() {
   const routes = [
     { url: "", element: <Home /> },
+    {url:'/code',element:<Code />},
     { url: "/", element: <Navigate to="/login" /> },
     { url: "*", element: <NotFoundPage /> },
   ];

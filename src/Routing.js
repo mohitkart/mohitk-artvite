@@ -27,7 +27,6 @@ const HapiniCreds = React.lazy(() => import('./pages/HapiniCreds'));
 
 const loading = () => <Loader />;
 
-
 const routes=[
   {url:'/study',element:<Study />},
   {url:'/dashboard',element:<Dashboard />},
