@@ -1,0 +1,21 @@
+$primaryColor:#2196f3;
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  
+    > .container {
+      max-width: 500px;
+  
+      .shadow {
+        border-top: 3px solid $primaryColor;
+      }
+  
+      .login-logo {
+        width: 100%;
+        max-width: 150px;
+      }
+    }
+  }
